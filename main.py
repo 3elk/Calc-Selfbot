@@ -1,17 +1,36 @@
-import discord
+#TOOL BY ELK
+#DISCORD: 2elk
+#GITHUB: 3elk
+
+import subprocess
 import os
-from discord.ext import commands
 import sys
+import discord
+from discord.ext import commands
 import asyncio
 import msvcrt
-import dotenv
+
+def install_module(module_name):
+    try:
+        subprocess.check_call([os.sys.executable, "-m", "pip", "install", module_name])
+    except subprocess.CalledProcessError:
+        (f"Failed to install module {module_name}")
+def import_discord():
+    try:
+        import discord
+        return discord
+    except ModuleNotFoundError:
+        print("Discord module wasnt found, installing...")
+        install_module("discord")
+        import discord
+        return discord
+discord = import_discord()
+
+token = "YOUR_TOKEN" # CHANGE THIS TO YOUR TOKEN
 os.system("cls")
 os.system("title CALC-SelfBot")
 os.system("chcp 65001 >nul")
 os.system("mode 70, 15")
-dotenv.load_dotenv()
-token = os.getenv("TOKEN")
-prefix = os.getenv("PREFIX")
 bot = commands.Bot(command_prefix="$", self_bot=True, intents=discord.Intents.default())
 
 @bot.event
@@ -73,7 +92,7 @@ async def mul(ctx, num1: int, num2: int):
 @bot.command()
 async def div(ctx, num1: int, num2: int):
     if num2 == 0:
-        await ctx.send("```ERROR: Cannot divide by zero```")
+        await ctx.send("```ERROR >> Cannot divide by zero```")
         await ctx.message.delete()
     else:
         await ctx.send(f"```{num1} / {num2} = {num1 / num2}```")
@@ -81,7 +100,7 @@ async def div(ctx, num1: int, num2: int):
 @bot.command()
 async def mod(ctx, num1: int, num2: int):
     if num2 == 0:
-        await ctx.send("```ERROR: Cannot divide by zero```")
+        await ctx.send("```ERROR >> Cannot divide by zero```")
         await ctx.message.delete()
     else:
         await ctx.send(f"```{num1} % {num2} = {num1 % num2}```")
@@ -103,7 +122,7 @@ async def dadd(ctx, num1: float, num2: float):
 @bot.command()
 async def dmod(ctx, num1: float, num2: float):
     if num2 == 0:
-        await ctx.send("```ERROR: Cannot divide by zero```")
+        await ctx.send("```ERROR >> Cannot divide by zero```")
         await ctx.message.delete()
         return
     result = num1 % num2
@@ -137,7 +156,7 @@ async def dmul(ctx, num1: float, num2: float):
 @bot.command()
 async def ddiv(ctx, num1: float, num2: float):
     if num2 == 0:
-        await ctx.send("```ERROR: Cannot divide by zero```")
+        await ctx.send("```ERROR >> Cannot divide by zero```")
         await ctx.message.delete()
         return
     result = num1 / num2
