@@ -9,3 +9,9 @@ Using a selfbot on Discord is strictly prohibited. A selfbot is an automated pro
   - Account Suspension: Your account may be temporarily or permanently banned.
   - Loss of Access: You may lose access to your servers, friends, and messages.
   - Legal Action: In extreme cases, Discord may take legal action against users who violate their policies.
+
+# How to get your token!
+
+  1 - Press Control, Shift, and I in the discord console
+  2 - Type in the following code: `(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()`
+  3 - You have your token!
