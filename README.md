@@ -21,6 +21,25 @@ Calc-SB is a python-programmed discord SelfBot used for math and algebra
     > $pow - Raises a number to the power of another number (E.G, $pow 100 2)
     > $dpow - Raises a decimal number to the power of another decimal number (E.G, $dpow 100.5 2.5)
 
+# How to use!
+
+  ### (THIS IS ASSUMING YOU HAVE THE LATEST VERSION OF PYTHON3 INSTALLED!)
+  
+  1 - Download the ZIP file from this repository
+
+  2 - Open the file labeled ".env" and open it in any text editor you have
+
+  3 - Put your token where instructed
+  
+### How to get your token!
+
+  4 - Press Control, Shift, and I in the discord console
+  
+  5 - Type in the following code:
+  
+  `(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()`
+  
+  3 - You have your token!
 # Warning!
 ### 🚨 Warning: Selfbot Usage is Against Discord's Terms of Service! 🚨
 
@@ -29,13 +48,3 @@ Using a selfbot on Discord is strictly prohibited. A selfbot is an automated pro
   - Account Suspension: Your account may be temporarily or permanently banned.
   - Loss of Access: You may lose access to your servers, friends, and messages.
   - Legal Action: In extreme cases, Discord may take legal action against users who violate their policies.
-
-## How to get your token!
-
-  1 - Press Control, Shift, and I in the discord console
-  
-  2 - Type in the following code:
-  
-  `(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()`
-  
-  3 - You have your token!
