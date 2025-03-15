@@ -1,7 +1,7 @@
 # Calc-SB
 Calc-SB is a python-programmed discord self bot used for basic math and algebra
 
-## CALC Commands
+# Commands
 
     > $h - Shows this help menu
     > $ping - Shows the latency of the bot
