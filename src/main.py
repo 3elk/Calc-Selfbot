@@ -9,24 +9,9 @@ import discord
 from discord.ext import commands
 import asyncio
 import msvcrt
-
-def install_module(module_name):
-    try:
-        subprocess.check_call([os.sys.executable, "-m", "pip", "install", module_name])
-    except subprocess.CalledProcessError:
-        (f"Failed to install module {module_name}")
-def import_discord():
-    try:
-        import discord
-        return discord
-    except ModuleNotFoundError:
-        print("Discord module wasnt found, installing...")
-        install_module("discord")
-        import discord
-        return discord
-discord = import_discord()
-
-token = "YOUR_TOKEN" # CHANGE THIS TO YOUR TOKEN
+from dotenv import load_dotenv
+load_dotenv()
+token = os.getenv('DISCORD_TOKEN')
 os.system("cls")
 os.system("title CALC-SelfBot")
 os.system("chcp 65001 >nul")
