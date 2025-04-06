@@ -27,25 +27,27 @@ Calc-SB is a python-programmed discord SelfBot used for math and algebra
   
   1 - Download the ZIP file from this repository
 
-  2 - Open the file labeled ".env" and open it in any text editor you have
+  2 - Find the ZIP file directory and type "pip install -r requirements.txt" in the terminal to download the libraries
 
-  3 - Put your token where instructed
+  3 - Open the file labeled ".env" and open it in any text editor you have
+
+  4 - Put your token where instructed
   
 ### How to get your token!
 
-  4 - Press Control, Shift, and I in the discord console
+  5 - Press Control, Shift, and I in the discord console
   
-  5 - Type in the following code:
+  6 - Type in the following code:
   
   `(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()`
   
-  6 - You have your token!
+  7 - You have your token!
   
 ###
 
-  7 - After you save your token in the .env file, run the file labeled "main.py"
+  8 - After you save your token in the .env file, run the file labeled "main.py"
 
-  8 - If all steps were followed correctly, you should see your discord user as the user connected.
+  9 - If all steps were followed correctly, you should see your discord user as the user connected.
 
   (TIP: Type "$ping" to see if the program properly responded to your messages)
   
